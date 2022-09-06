@@ -1,0 +1,44 @@
+body{
+    background-color: bisque;
+    border: 12px solid yellowgreen;
+}
+
+
+.maiin {
+    background-color: antiquewhite;
+    width: 900px;
+    height: 600px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 5px;
+    border: 12px solid yellowgreen;
+   
+ 
+}
+
+
+
+#fourth{
+    background-color:lightcoral;
+    width:200px;
+    height:100px;
+  }
+  
+  #third{
+      background-color:lightcoral;
+    width:200px;
+    height:100px;
+  }
+
+
+  #second{
+    background-color:lightcoral;
+  width:200px;
+  height:100px;
+}
+
+h1{
+    background-color: aquamarine;
+    border: 2px solid yellowgreen;
+    text-align: center;
+}
