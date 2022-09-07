@@ -9,9 +9,9 @@ body{
     width: 900px;
     height: 600px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 5px;
-    border: 12px solid yellowgreen;
+    border: 10px solid yellowgreen;
    
  
 }
@@ -20,25 +20,29 @@ body{
 
 #fourth{
     background-color:lightcoral;
-    width:200px;
-    height:100px;
+    width:900px;
+    height:110px;
   }
   
   #third{
-      background-color:lightcoral;
-    width:200px;
-    height:100px;
+    background-color:lightcoral;
+    width:900px;
+    height:110px;
   }
 
 
   #second{
     background-color:lightcoral;
-  width:200px;
-  height:100px;
+    width:900px;
+    height:110px;
 }
 
 h1{
     background-color: aquamarine;
     border: 2px solid yellowgreen;
     text-align: center;
+}
+
+#submit {
+  margin: auto;
 }

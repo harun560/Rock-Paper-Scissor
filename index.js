@@ -1,20 +1,12 @@
-function netSalary() {
-    
-    let userInput = document.getElementById("Gross").value;
-    let outputt;
+function getUserChoice ( userInput) {
+ userInput = document.getElementById("Gross").value;
+  if(userInput === 'rock'|| userInput === 'paper' ||userInput ==='scissor') {
+  return userInput = userInput.toLowerCase(); 
+} else{
+ return"you chose wrong";
+}
 
-    if (userInput === 'rock' || userInput === 'paper' ||userInput === 'scissor') {
-		outputt =  userInput;
 
-    }
-
-   
-    else {
-     outputt =   "you chose wrong";
-    }
-    
-    document.getElementById("fourth").textContent = outputt;
-    return false;
 }
 
 function getComputerChoice(){
@@ -35,6 +27,7 @@ function getComputerChoice(){
 
 
 function determineWinner (userChoice,computerChoice){
+  
     if(userChoice === computerChoice){
       return "Game is Tie";
     }
@@ -47,27 +40,44 @@ function determineWinner (userChoice,computerChoice){
     }
     if(userChoice === 'paper'){
    if(computerChoice === 'rock'){
-     return 'The Computer Won!';
+     return 'You Won';
    } else {
-     return "you Won"
+     return "The Computer Won!";
    }
     }
    
-    if(userChoice === 'scissors'){
+    if(userChoice === 'scissor'){
    if(computerChoice === 'rock'){
      return 'The Computer Won!';
    } else {
      return "you Won"
    }
     }
+
+    if(userChoice === 'rock'){
+      if(computerChoice === 'scissor'){
+        return "you Won"
+      } else {
+        return 'The Computer Won!';
+      }
+       }
    
      }
-  function display(){
-   document.getElementById("third").textContent =   getComputerChoice();
-    document.getElementById("second").textContent =   determineWinner();
+     
+
+  
+
+  function playGame (){
+    const userChoice = getUserChoice();
+    const computerChoice = getComputerChoice();
+     document.getElementById("fourth").textContent = userChoice;
+   
+    document.getElementById("third").textContent =  computerChoice;
+    document.getElementById("second").textContent =   determineWinner(userChoice,computerChoice);
+    
   }
 
-
+  
 
 
 
